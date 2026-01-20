@@ -14,7 +14,7 @@ export default async function AllProjects() {
           className="flex w-full flex-col gap-4 items-start justify-between"
         >
           <div className="overflow-clip rounded-box">
-            <Link href={`projects/${project.slug}`}>
+            <Link href={`/projects/${project.slug}`}>
               <Image
                 src={project.metadata.featuredImage || ""}
                 alt={project.metadata.title}
@@ -49,7 +49,7 @@ export default async function AllProjects() {
               type="button"
               className="btn btn-primary rounded-field mt-3 text-xs"
             >
-              <Link href={`projects/${project.slug}`}>Read more</Link>
+              <Link href={`/projects/${project.slug}`}>Read more</Link>
             </button>
           </div>
         </article>

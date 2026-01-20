@@ -15,7 +15,7 @@ export default async function AllProjects() {
             className="flex w-full flex-col gap-4 items-start justify-between"
           >
             <div className="overflow-clip rounded-box">
-              <Link href={`news/${article.slug}`}>
+              <Link href={`/news/${article.slug}`}>
                 <Image
                   src={article.metadata.featuredImage || ""}
                   alt={article.metadata.title}
@@ -36,7 +36,7 @@ export default async function AllProjects() {
             </time>
             <div className="group relative">
               <Link
-                href={`news/${article.slug}`}
+                href={`/news/${article.slug}`}
                 className="text-base-content hover:text-accent"
               >
                 <h3 className=" text-lg/6 font-semibold">
@@ -50,7 +50,7 @@ export default async function AllProjects() {
                 type="button"
                 className="btn btn-primary rounded-field mt-3 text-xs"
               >
-                <Link href={`news/${article.slug}`}>Read more</Link>
+                <Link href={`/news/${article.slug}`}>Read more</Link>
               </button>
             </div>
           </article>

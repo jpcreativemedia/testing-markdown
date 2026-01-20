@@ -3,8 +3,10 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
+  output: undefined,
   reactCompiler: true,
   cacheComponents: true,
+  trailingSlash: false,
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
   images: {
     remotePatterns: [
@@ -28,6 +30,7 @@ const nextConfig: NextConfig = {
       },
     ],
     dangerouslyAllowSVG: true,
+    unoptimized: false,
   },
 };
 

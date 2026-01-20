@@ -2,8 +2,6 @@ import fs from "node:fs";
 import path from "node:path";
 import type { MetadataRoute } from "next";
 
-export const dynamic = "force-static";
-
 async function getNews() {
   const dir = path.join(process.cwd(), "content/news");
   const files = fs.readdirSync(dir);

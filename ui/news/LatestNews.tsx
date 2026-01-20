@@ -27,6 +27,7 @@ export default async function LatestNews() {
                   alt={article.metadata.title}
                   width={1920}
                   height={1080}
+                  loading="lazy"
                   className="rounded-box aspect-video object-cover overflow-clip h-64 hover:scale-105 transition-transform duration-100 hover:grayscale-20"
                 />
               </Link>

@@ -10,7 +10,9 @@ export default function Hero() {
         <Image
           alt=""
           src="/images/beach.jpg"
-          fill
+          width={1920}
+          height={1080}
+          priority
           className="absolute inset-0 -z-20 size-full object-cover mix-blend-multiply"
         />
         <div className="absolute top-0 size-full overlay bg-primary opacity-10 mix-blend-overlay -z-10"></div>
@@ -21,6 +23,7 @@ export default function Hero() {
                 A place for a special announcement &nbsp;
                 <Link
                   href="/corporate/about"
+                  prefetch={true}
                   className="font-semibold text-white hover:text-accent"
                 >
                   <span aria-hidden="true" className="absolute inset-0" />
@@ -37,11 +40,16 @@ export default function Hero() {
                 lorem cupidatat commodo. Elit sunt amet fugiat veniam.
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
-                <Link href="/news" className="btn btn-primary offset-2">
+                <Link
+                  href="/news"
+                  prefetch={true}
+                  className="btn btn-primary offset-2"
+                >
                   Latest News
                 </Link>
                 <Link
                   href="/corporate/about"
+                  prefetch={true}
                   className="text-sm/6 font-semibold text-white hover:text-accent"
                 >
                   Learn more <span aria-hidden="true">→</span>

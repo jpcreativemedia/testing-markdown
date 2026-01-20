@@ -1,8 +1,51 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@plugin "daisyui" {
+  themes: false;
+}
+
+@plugin "daisyui/theme" {
+  name: "mvp-markdown";
+  default: true;
+  prefersdark: false;
+  color-scheme: "light";
+  --color-base-100: oklch(100.0% 0 0);
+  --color-base-200: oklch(100.0% 0 0);
+  --color-base-300: oklch(95.4% 0 0);
+  --color-base-content: oklch(14.1% 0 285.9);
+  --color-primary: oklch(59.0% 0.14 250.3);
+  --color-primary-content: oklch(100.0% 0 0);
+  --color-secondary: oklch(71% 0.18 8.24);
+  --color-secondary-content: oklch(14.1% 0 285.9);
+  --color-accent: oklch(79.0% 0.12 10.22);
+  --color-accent-content: oklch(14.1% 0 285.9);
+  --color-neutral: oklch(59.0% 0.14 250.3);
+  --color-neutral-content: oklch(100.0% 0 0);
+  --color-info: oklch(81.0% 0.101 250.3);
+  --color-info-content: oklch(14.1% 0 285.9);
+  --color-success: oklch(76.0% 0.133 163.2);
+  --color-success-content: oklch(14.1% 0 285.9);
+  --color-warning: oklch(90% 0.07 317.6);
+  --color-warning-content: oklch(14.1% 0 285.9);
+  --color-error: oklch(71% 0.194 13.428);
+  --color-error-content: oklch(14.1% 0 285.9);
+  --radius-selector: 0.25rem;
+  --radius-field: 1rem;
+  --radius-box: 0.75rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 2px;
+  --depth: 1;
+  --noise: 0;
+}
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+}
+
+@theme {
+  --spacing-8xl: 1536px;
 }
 
 @theme inline {
@@ -16,6 +59,31 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+  }
+}
+
+@layer base {
+  :focus-visible {
+    outline: 1px solid var(--color-primary);
+    outline-offset: 0.25rem;
+    border-radius: var(--radius-selector);
+  }
+
+  /* slightly stronger ring for interactive controls */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 0.25rem;
+    border-radius: var(--radius-selector);
+  }
+
+  /* remove default focus for mouse interactions */
+  :focus:not(:focus-visible) {
+    outline: none;
+    box-shadow: none;
   }
 }
 

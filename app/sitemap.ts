@@ -36,6 +36,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const team = await getTeam();
   const baseUrl = String(process.env.BASE_URL);
 
+  const buildDate = new Date();
+
   return [
     {
       url: baseUrl,
@@ -47,8 +49,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
       let lastModified = new Date();
       if (fs.existsSync(dir)) {
-        const stats = fs.statSync(dir);
-        lastModified = stats.mtime; // mtime is modified, ctime is created
+        // const stats = fs.statSync(dir);
+        lastModified = buildDate; // mtime is modified, ctime is created
       }
 
       return {
@@ -63,8 +65,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
       let lastModified = new Date();
       if (fs.existsSync(dir)) {
-        const stats = fs.statSync(dir);
-        lastModified = stats.mtime; // mtime is modified, ctime is created
+        // const stats = fs.statSync(dir);
+        lastModified = buildDate; // mtime is modified, ctime is created
       }
 
       return {
@@ -79,8 +81,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
       let lastModified = new Date();
       if (fs.existsSync(dir)) {
-        const stats = fs.statSync(dir);
-        lastModified = stats.mtime; // mtime is modified, ctime is created
+        // const stats = fs.statSync(dir);
+        lastModified = buildDate; // mtime is modified, ctime is created
       }
 
       return {

@@ -40,7 +40,7 @@ export default async function NewsArticle({
         />
         <Link
           href="/news"
-          className="text-base/7 font-semibold text-primary hover:text-accent mb-16"
+          className="text-base/7 font-semibold text-primary hover:text-accent"
         >
           <span aria-hidden="true">&larr;</span> Back to all news
         </Link>

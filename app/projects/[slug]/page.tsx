@@ -40,7 +40,7 @@ export default async function Project({
         />
         <Link
           href="/projects"
-          className="text-base/7 font-semibold text-primary hover:text-accent mb-16"
+          className="text-base/7 font-semibold text-primary hover:text-accent"
         >
           <span aria-hidden="true">&larr;</span> Back to all projects
         </Link>

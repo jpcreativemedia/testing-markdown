@@ -19,12 +19,6 @@ export const primaryMenu: menuItems[] = [
         path: "/corporate/team",
         // icon: "users",
       },
-      {
-        id: 3,
-        label: "Governance & Ethics",
-        path: "/corporate/governance-and-ethics",
-        // icon: "shopping-bag",
-      },
     ],
   },
   {
@@ -64,6 +58,20 @@ export const primaryMenu: menuItems[] = [
     label: "Investors",
     path: "/investors",
     // icon: "info",
+    submenu: [
+      {
+        id: 1,
+        label: "Shareholder Information",
+        path: "/investors/shareholder-information",
+        // icon: "home",
+      },
+      {
+        id: 2,
+        label: "Financial Statements",
+        path: "/investors/financial-statements",
+        // icon: "users",
+      },
+    ],
   },
   {
     id: 4,

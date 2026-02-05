@@ -33,7 +33,7 @@ export default function PageContact() {
                       <dd>
                         <a
                           href="mailto:collaborate@example.com"
-                          className="font-semibold text-indigo-600"
+                          className="font-semibold text-primary"
                         >
                           collaborate@example.com
                         </a>
@@ -55,7 +55,7 @@ export default function PageContact() {
                       <dd>
                         <a
                           href="mailto:press@example.com"
-                          className="font-semibold text-indigo-600"
+                          className="font-semibold text-primary"
                         >
                           press@example.com
                         </a>
@@ -77,7 +77,7 @@ export default function PageContact() {
                       <dd>
                         <a
                           href="mailto:careers@example.com"
-                          className="font-semibold text-indigo-600"
+                          className="font-semibold text-primary"
                         >
                           careers@example.com
                         </a>
@@ -99,7 +99,7 @@ export default function PageContact() {
                       <dd>
                         <a
                           href="mailto:hello@example.com"
-                          className="font-semibold text-indigo-600"
+                          className="font-semibold text-primary"
                         >
                           hello@example.com
                         </a>

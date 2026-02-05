@@ -1,14 +1,14 @@
 import PageTitle from "@/ui/layout/PageTitle";
 
-export default async function PageGovernance() {
+export default function PageInvestors() {
   return (
     <>
       <PageTitle
-        title="Governance & Ethics"
-        subtitle="Our ethics are what make us"
+        title="Shareholder Information"
+        subtitle="Check on your investment"
         description="Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At
-    arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae
-    feugiat egestas."
+      arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae
+      feugiat egestas."
       />
       <section className="flex flex-col gap-4">
         <p>

@@ -1,4 +1,4 @@
-export default function InvestorsLayout({
+export default function ContactLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;

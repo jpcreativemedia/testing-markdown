@@ -45,8 +45,8 @@ export default async function NewsArticle({
           <span aria-hidden="true">&larr;</span> Back to all news
         </Link>
       </div>
-      <div className="flex flex-row flex-nowrap gap-16 w-full">
-        <div className="basis-2/5 grow-0">
+      <div className="flex flex-row flex-wrap sm:flex-nowrap gap-16 w-full">
+        <div className="basis-full sm:basis-2/5 grow-0">
           <Image
             src={metadata?.featuredImage}
             alt={metadata?.title}
@@ -55,7 +55,7 @@ export default async function NewsArticle({
             className="rounded-box aspect-square object-cover"
           />
         </div>
-        <div className="basis-3/5 prose">
+        <div className="basis-full sm:basis-3/5 prose">
           <Article className="prose" />
         </div>
       </div>
